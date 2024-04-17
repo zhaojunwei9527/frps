@@ -1,7 +1,7 @@
 bindAddr = "0.0.0.0"
-bindPort = 7000
+bindPort = 9527
 #kcpBindPort = 7000
-quicBindPort = 7000
+quicBindPort = 9527
 
 vhostHTTPPort = 80
 vhostHTTPSPort = 443
@@ -13,7 +13,7 @@ transport.tcpKeepalive = 7200
 transport.tls.force = false
 
 webServer.addr = "0.0.0.0"
-webServer.port = 7500
+webServer.port = 9528
 webServer.user = "admin"
 webServer.password = "admin"
 webServer.pprofEnable = false
@@ -24,10 +24,10 @@ log.maxDays = 3
 log.disablePrintColor = false
 
 auth.method = "token"
-auth.token = "12345678"
+auth.token = "123456"
 
 allowPorts = [
-  { start = 10001, end = 50000 }
+  { start = 0, end = 50000 }
 ]
 
 maxPortsPerClient = 8
